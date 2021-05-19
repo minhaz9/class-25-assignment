@@ -1,0 +1,548 @@
+* {
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1224px;
+  margin: auto;
+}
+
+.container-fluid {
+  max-width: 100%;
+  margin: auto;
+}
+
+.clear::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.main-div .header .container-fluid {
+  background: #ececec;
+}
+
+.main-div .header .container-fluid .container .logo {
+  width: 10%;
+  float: left;
+}
+
+.main-div .header .container-fluid .container .logo img {
+  max-width: 65%;
+  margin: 8px 0;
+}
+
+.main-div .header .container-fluid .container .menu {
+  float: right;
+}
+
+.main-div .header .container-fluid .container .menu ul {
+  list-style: none;
+  height: 12px;
+}
+
+.main-div .header .container-fluid .container .menu ul li {
+  display: inline-block;
+}
+
+.main-div .header .container-fluid .container .menu ul li a {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: black;
+  padding: 20px 23px;
+  display: block;
+  position: relative;
+}
+
+.main-div .header .container-fluid .container .menu ul li a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0%;
+  background: #262925;
+  transition: .5s;
+}
+
+.main-div .header .container-fluid .container .menu ul li a:hover {
+  color: red;
+}
+
+.main-div .header .container-fluid .container .menu ul li a:hover::before {
+  width: 100%;
+}
+
+.main-div .banner {
+  text-align: center;
+}
+
+.main-div .banner .banner_img {
+  background-image: url(./img/mbr-4.jpg), linear-gradient(rgba(0, 0, 0, 0.349), rgba(0, 0, 0, 0.349), rgba(0, 0, 0, 0.349));
+  background-size: 100% 100%;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  padding: 250px 200px;
+}
+
+.main-div .banner .banner_img .inner_writing_part p {
+  margin: 15px 0;
+  color: white;
+}
+
+.main-div .banner .banner_img .inner_writing_part h1 {
+  color: white;
+  font-size: 59px;
+  margin: 15px 0;
+}
+
+.main-div .banner .banner_img .inner_writing_part a {
+  display: inline-block;
+}
+
+.main-div .banner .banner_img .inner_writing_part a button {
+  padding: 16px 23px;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 7px;
+  outline: none;
+  border: none;
+  margin: 0 8px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  font-weight: 600;
+  color: #7d7d7d;
+}
+
+.main-div .banner .banner_img .inner_writing_part a button i {
+  font-size: 20px;
+  line-height: 15px;
+  margin-right: 7px;
+  color: #7d7d7d;
+}
+
+.main-div .banner .banner_img .inner_writing_part a button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.315);
+  z-index: -1;
+  transition: .4s;
+  border-radius: 7px;
+}
+
+.main-div .banner .banner_img .inner_writing_part a button:hover {
+  box-shadow: 0px 0px 8px blue;
+}
+
+.main-div .banner .banner_img .inner_writing_part a button:hover::before {
+  width: 100%;
+}
+
+.main-div .price {
+  background: #ddd;
+  margin-top: -20px;
+  padding-top: 22px;
+}
+
+.main-div .price .price_header .inner_div {
+  text-align: center;
+}
+
+.main-div .price .price_header .inner_div h1 {
+  font-weight: 500;
+  margin: 20px 0;
+}
+
+.main-div .price .price_card .card1 {
+  text-align: center;
+}
+
+.main-div .price .price_card .card1 .container .card {
+  text-align: left;
+  display: inline-block;
+}
+
+.main-div .price .price_card .card1 .container .card .card {
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  display: block;
+  padding: 12px;
+  padding-right: 60px;
+  transition: .5s;
+}
+
+.main-div .price .price_card .card1 .container .card p {
+  color: #363434;
+}
+
+.main-div .price .price_card .card1 .container .card p i {
+  color: #e79230;
+  font-size: 30px;
+  margin-right: 25px;
+  margin-left: 8px;
+}
+
+.main-div .price .price_card .card1 .container .card p .fa-check {
+  margin-right: 20px;
+}
+
+.main-div .price .price_card .card1 .container .card .pp {
+  display: inline-block;
+  font-size: 18px;
+}
+
+.main-div .price .price_card .card1 .container .card .dollar_div {
+  background: #ddd;
+  padding: 3px 0px;
+}
+
+.main-div .price .price_card .card1 .container .card .dollar_div h2 .fs- {
+  font-size: 18px;
+}
+
+.main-div .price .price_card .card1 .container .card h5 {
+  display: inline-block;
+}
+
+.main-div .price .price_card .card1 .container .card button {
+  border: none;
+  outline: yellow;
+  background: white;
+  padding: 12px 18px;
+  border-radius: 6px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 20px;
+  transition: .5s;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.562);
+}
+
+.main-div .price .price_card .card1 .container .card button a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.main-div .price .price_card .card1 .container .space {
+  margin: 0 50px;
+}
+
+.main-div .price .price_card .card1 .container .center {
+  transition: .5s;
+  text-align: center;
+}
+
+.main-div .price .price_card .card1 .container .center:hover {
+  color: white;
+  background: blue;
+}
+
+.main-div .price .price_card .card1 .container .center:hover:hover button {
+  background: #969696;
+  box-shadow: 0px 0px 30px white;
+}
+
+.main-div .price .price_card .card1 .container .center:hover:hover button a {
+  color: white;
+}
+
+.main-div .price .price_card .card1 .container .center:hover .card {
+  background: blue;
+  color: cornsilk;
+}
+
+.main-div .price .price_card .card1 .container .center:hover p {
+  color: cornsilk;
+}
+
+.main-div .price .price_card .card1 .container .center:hover .dollar_div {
+  background: transparent;
+}
+
+.main-div .team .team_pic .container {
+  text-align: center;
+}
+
+.main-div .team .team_pic .container .inner_div {
+  display: inline-block;
+  border: 6px double #aa972c;
+  text-align: left;
+  margin: 08px;
+}
+
+.main-div .team .team_pic .container .inner_div .img_div {
+  max-width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.main-div .team .team_pic .container .inner_div .img_div img {
+  transition: .3s;
+}
+
+.main-div .team .team_pic .container .inner_div:hover .img_div img {
+  transform: scale(1.1);
+}
+
+.main-div .team .team_pic .container .inner_div h6 {
+  margin-top: 15px;
+  margin-left: 8px;
+}
+
+.main-div .team .team_pic .container .inner_div p {
+  margin-left: 8px;
+}
+
+.main-div .subscribe {
+  background: #f5f5f5;
+}
+
+.main-div .subscribe .inner_div {
+  width: 400px;
+  text-align: center;
+  margin: auto;
+}
+
+.main-div .subscribe .inner_div form .box {
+  box-shadow: none;
+}
+
+.main-div .subscribe .inner_div form .box:focus {
+  box-shadow: 0px 0px 8px blue;
+}
+
+.main-div .subscribe .inner_div form .width {
+  width: 200px;
+  display: inline-block;
+  background: #aa972c;
+  color: blanchedalmond;
+  transition: .4s;
+}
+
+.main-div .subscribe .inner_div form .width:focus {
+  box-shadow: none;
+}
+
+.main-div .subscribe .inner_div form .width:hover {
+  background: #000;
+}
+
+.main-div .why_choose_us {
+  padding: 50px 0px;
+}
+
+.main-div .why_choose_us .header {
+  text-align: center;
+}
+
+.main-div .why_choose_us .container {
+  margin-top: 30px;
+}
+
+.main-div .why_choose_us .container .img_div {
+  float: left;
+  width: 40%;
+}
+
+.main-div .why_choose_us .container .img_div img {
+  width: 97%;
+}
+
+.main-div .why_choose_us .container .inner_div {
+  float: right;
+  width: 60%;
+  margin-top: 6px;
+}
+
+.main-div .why_choose_us .container .inner_div .design {
+  font-weight: 600;
+  color: #646464;
+}
+
+.main-div .feedback {
+  text-align: left;
+  background: #ebebeb;
+  margin: auto;
+}
+
+.main-div .feedback .header {
+  text-align: center;
+}
+
+.main-div .feedback .carder {
+  text-align: center;
+}
+
+.main-div .feedback .carder .container .inner_div .card {
+  display: inline-block;
+  width: 30%;
+  margin: 10px 10px;
+  border-width: 1px;
+  border-color: #817c7c;
+}
+
+.main-div .feedback .carder .container .inner_div .card .inner_div {
+  position: relative;
+}
+
+.main-div .feedback .carder .container .inner_div .card .inner_div .brif {
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.205);
+  border-bottom: none;
+  padding: 50px 25px;
+  text-align: left;
+  position: relative;
+}
+
+.main-div .feedback .carder .container .inner_div .card .inner_div .brif p {
+  color: #828282;
+  position: relative;
+  z-index: 1;
+}
+
+.main-div .feedback .carder .container .inner_div .card .inner_div .brif p::before {
+  content: "\f10d";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  position: absolute;
+  top: -40px;
+  left: 0;
+  font-size: 70px;
+  z-index: -1;
+  color: rgba(0, 0, 0, 0.151);
+}
+
+.main-div .feedback .carder .container .inner_div .card .inner_div .border_v {
+  text-align: left;
+  position: relative;
+  border: none;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.356);
+}
+
+.main-div .feedback .carder .container .inner_div .card .inner_div .border_v::before {
+  content: "";
+  position: absolute;
+  border-left: 16px solid transparent;
+  border-top: 26px solid white;
+  border-right: 16px solid transparent;
+  border-bottom: 12px solid transparent;
+  margin-left: 118px;
+}
+
+.main-div .feedback .carder .container .inner_div .card .inner_div .image {
+  padding: 40px 0;
+  background: #ebebeb;
+  text-align: left;
+  padding-left: 50px;
+}
+
+.main-div .feedback .carder .container .inner_div .card .inner_div .image .pic {
+  display: inline-block;
+}
+
+.main-div .feedback .carder .container .inner_div .card .inner_div .image .pic img {
+  width: 98px;
+  border: 5px solid red;
+}
+
+.main-div .feedback .carder .container .inner_div .card .inner_div .image .name {
+  display: inline-block;
+  line-height: 5px;
+  text-align: left;
+  padding-top: 25px;
+  margin-left: 20px;
+}
+
+.main-div .contact_us .mid_content {
+  width: 550px;
+  margin: auto;
+  text-align: center;
+}
+
+.main-div .contact_us .mid_content .contact_heading p {
+  color: #878787;
+  word-spacing: 1px;
+  line-height: 35px;
+}
+
+.main-div .contact_us .mid_content .inner_div form .email {
+  width: 100%;
+  border: 1px solid orange;
+  padding: 9px 18px;
+  outline: none;
+  border-radius: 6px;
+}
+
+.main-div .contact_us .mid_content .inner_div form .email:focus {
+  border-color: red;
+  box-shadow: 0px 0px 8px blue;
+}
+
+.main-div .contact_us .mid_content .inner_div form .name_c {
+  width: 45%;
+  border: 1px solid orange;
+  padding: 9px 18px;
+  outline: none;
+  border-radius: 6px;
+  word-spacing: 50px;
+}
+
+.main-div .contact_us .mid_content .inner_div form .name_c:focus {
+  border-color: red;
+  box-shadow: 0px 0px 8px blue;
+}
+
+.main-div .contact_us .mid_content .inner_div form .me {
+  margin-right: 4%;
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+
+.main-div .contact_us .mid_content .inner_div form .ml {
+  margin-left: 4%;
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+
+.main-div .contact_us .mid_content .inner_div form textarea {
+  width: 100%;
+  border: 1px solid orange;
+  padding: 9px 18px;
+  outline: none;
+  border-radius: 6px;
+  word-spacing: 50px;
+  height: 140px;
+}
+
+.main-div .contact_us .mid_content .inner_div form textarea:focus {
+  border-color: red;
+  box-shadow: 0px 0px 8px blue;
+}
+
+.main-div .contact_us .mid_content .inner_div form .btn {
+  background: #f14b4b;
+  color: white;
+  width: 130px;
+  position: relative;
+  transition: .4s;
+}
+
+.main-div .contact_us .mid_content .inner_div form .btn:hover {
+  background: #000;
+}
+
+.main-div .contact_us .mid_content .inner_div form .btn:focus {
+  box-shadow: none;
+}
+
+.main-div .contact_us .footer {
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
